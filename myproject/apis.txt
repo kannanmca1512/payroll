@@ -1,0 +1,29 @@
+curl \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX3BrIjoxLCJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiY29sZF9zdHVmZiI6IuKYgyIsImV4cCI6MTIzNDU2LCJqdGkiOiJmZDJmOWQ1ZTFhN2M0MmU4OTQ5MzVlMzYyYmNhOGJjYSJ9.NHlztMGER7UADHZJlxNG0WSi22a2KaYSfd1S-AuT7lU" \
+  http://localhost:8000/api/v1/emp_info/
+
+============================================================================
+curl \
+  -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMzNDkzNjU4LCJqdGkiOiI2YjkxNDQ1ZTM4Yjc0MWQ3YjAyMWNjNWViNDk4NzQ0NyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4ifQ.gyj9jLjr2OJx54MsdjhtthQmSeSO6VjFsPBdMyzLPvM" \
+  http://localhost:8000/api/v1/all/emps/
+
+============================================================================
+curl \
+  -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMzNDk2MDY3LCJqdGkiOiI1ZDk3NWFkN2M5ZTg0MzFiOGY0Y2RjNWQ2Mzk5YjA5MSIsInVzZXJfaWQiOjIsInVzZXJuYW1lIjoia2FubmFuIiwicm9sZSI6IkVNUExPWUVFIn0.JyTrpCwdO3sHPahQafi53WqA07mij6o7GiI1DqTpJz0" \
+  http://localhost:8000/api/v1/emp/payroll/
+
+============================================================================
+
+curl \
+  -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMzNDk2MDY3LCJqdGkiOiI1ZDk3NWFkN2M5ZTg0MzFiOGY0Y2RjNWQ2Mzk5YjA5MSIsInVzZXJfaWQiOjIsInVzZXJuYW1lIjoia2FubmFuIiwicm9sZSI6IkVNUExPWUVFIn0.JyTrpCwdO3sHPahQafi53WqA07mij6o7GiI1DqTpJz0" \
+  http://localhost:8000/api/v1/emp/payroll/
+
+============================================================================
+
+curl \
+  -X POST \
+   -H "Content-Type: application/json" \
+  -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMzNDk5MzgzLCJqdGkiOiJlODQ1ZTcyZDgzYjg0MjZhYjM1NzdkZjM3MDcxODEzMyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4ifQ.txjFO1-n7n9VeDaWfbm83UtWWoFkfgnx8La4iao2ILg" \
+  -d '{"leaves": "3"}' \
+  http://localhost:8000/api/v1/emp/leave/update/2/
+
